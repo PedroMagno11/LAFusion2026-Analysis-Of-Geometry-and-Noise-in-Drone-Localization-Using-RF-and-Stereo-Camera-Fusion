@@ -1,10 +1,7 @@
 # Simulador de Fusão RF+Câmera para Localização de Drones
 
-Guia rápido para rodar o projeto do zero. Para entender o que cada arquivo faz e a fundamentação na literatura, veja `guia_arquivos_e_literatura.md`. Para o desenho
-completo da pesquisa, veja `metodologia_fusao_rf_camera_drone.md`. Para instruções
-em inglês voltadas a revisores (reprodução dos resultados do artigo), veja
+For English instructions aimed at reviewers (reproducing the article's results), see
 `REPRODUCIBILITY.md`.
-
 
 
 ## 1. Preparar o ambiente

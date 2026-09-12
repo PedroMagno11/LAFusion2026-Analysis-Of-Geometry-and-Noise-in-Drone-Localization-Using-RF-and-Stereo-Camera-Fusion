@@ -151,8 +151,7 @@ across runs.
 
 - `trajectory_generator.py`, `station_layout_generator.py`: deterministic
   ground-truth trajectory and the three station geometries.
-- `rf_sensor_model.py`, `camera_sensor_model.py`: sensor noise models
-  (calibrated to literature — see `metodologia_completa.md` §3).
+- `rf_sensor_model.py`, `camera_sensor_model.py`: sensor noise models.
 - `fusion_models.py`: shared motion/measurement models and filter
   initialization (used by both architectures).
 - `ekf_fusion.py`: the global EKF (fusion/rf_only/camera_only modes).
