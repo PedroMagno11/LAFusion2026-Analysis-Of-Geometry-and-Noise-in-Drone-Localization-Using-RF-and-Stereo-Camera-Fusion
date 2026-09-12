@@ -63,10 +63,6 @@ EXPERIMENT = {
 ```bash
 python orchestrator.py
 ```
-Cada repetição agora roda o EKF global (3 modos) + track-to-track + baseline -
-mais lento que a versão só-UKF/só-um-filtro de antes. Tempo estimado para N=30:
-reserve bastante mais que as ~2h15min da versão anterior; meça numa repetição
-só antes de disparar o experimento completo.
 
 **Paralela — Linux/Mac (bash):**
 ```bash
@@ -126,18 +122,4 @@ Dentro de `experiment_results/` (ou o `output_dir` que você configurou):
 
 ---
 
-## 7. Ordem recomendada se algo der errado
 
-1. Confirme as dependências (`pip list | grep -E "scipy|statsmodels"`).
-2. Rode `python3 config.py` — se der erro de sintaxe, o problema está lá.
-3. Rode os módulos na ordem: trajectory_generator -> station_layout_generator ->
-   rf_sensor_model -> camera_sensor_model -> detection_association -> gdop_calculator ->
-   fusion_models -> ekf_fusion -> track_to_track_fusion -> baseline_estimator ->
-   telemetry_exporter -> metrics_evaluator -> orchestrator - cada um depende só
-   dos anteriores, então isso ajuda a isolar onde algo quebrou.
-4. Se o EKF divergir com alguma semente nova (RMSE de centenas/milhares de
-   metros), NÃO é necessariamente bug - veja achados_divergencia_fusao.md §3
-   e §8, que documentam esse comportamento e como foi tratado (gate de
-   inovação + inicialização por diferenciação de dois pontos). O
-   track_to_track_ci costuma ser mais robusto nesses casos (§10.3), mas não é
-   imune.
