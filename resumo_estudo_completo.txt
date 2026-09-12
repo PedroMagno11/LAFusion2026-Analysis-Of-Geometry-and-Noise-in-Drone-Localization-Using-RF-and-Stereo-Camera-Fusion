@@ -1,0 +1,67 @@
+==============================================================================
+RESUMO DO ESTUDO COMPLETO
+==============================================================================
+
+--- Experimento principal: RMSE de regime permanente e divergência ---
+
+  Cenário 1 | baseline_geometric   | RMSE_steady=     1.808m ±    0.208 | divergência=  0.0% | n=30
+  Cenário 1 | camera_only          | RMSE_steady=     0.070m ±    0.009 | divergência=  0.0% | n=30
+  Cenário 1 | fusion               | RMSE_steady=     0.192m ±    0.011 | divergência=  0.0% | n=30
+  Cenário 1 | rf_only              | RMSE_steady=304434918.422m ± 147001480.447 | divergência=100.0% | n=30
+  Cenário 1 | track_to_track_ci    | RMSE_steady=     0.282m ±    0.027 | divergência=  0.0% | n=30
+  Cenário 2 | baseline_geometric   | RMSE_steady=     2.567m ±    0.265 | divergência=  0.0% | n=30
+  Cenário 2 | camera_only          | RMSE_steady=     0.140m ±    0.042 | divergência=  0.0% | n=30
+  Cenário 2 | fusion               | RMSE_steady=     0.252m ±    0.015 | divergência=  0.0% | n=30
+  Cenário 2 | rf_only              | RMSE_steady=     6.868m ±    0.018 | divergência=100.0% | n=30
+  Cenário 2 | track_to_track_ci    | RMSE_steady=     0.423m ±    0.513 | divergência=  6.7% | n=30
+  Cenário 3 | baseline_geometric   | RMSE_steady=     2.394m ±    0.227 | divergência=  0.0% | n=30
+  Cenário 3 | camera_only          | RMSE_steady=     0.067m ±    0.008 | divergência=  0.0% | n=30
+  Cenário 3 | fusion               | RMSE_steady=     0.161m ±    0.006 | divergência=  0.0% | n=30
+  Cenário 3 | rf_only              | RMSE_steady=     6.777m ±    0.022 | divergência=100.0% | n=30
+  Cenário 3 | track_to_track_ci    | RMSE_steady=     0.310m ±    0.242 | divergência=  3.3% | n=30
+
+--- Correlação GDOP x erro (média por cenário x arquitetura) ---
+
+  Cenário 1 | fusion               | r médio= 0.649 | significativo em 30/30
+  Cenário 1 | track_to_track_ci    | r médio= 0.388 | significativo em 2/30
+  Cenário 2 | fusion               | r médio= 0.099 | significativo em 0/30
+  Cenário 2 | track_to_track_ci    | r médio= 0.290 | significativo em 0/30
+  Cenário 3 | fusion               | r médio= 0.363 | significativo em 3/30
+  Cenário 3 | track_to_track_ci    | r médio= 0.401 | significativo em 0/30
+
+--- Experimento fatorial: geometria (distance_scale) x ruído (noise_scale) ---
+
+    (fusion apenas, para leitura rápida - ver o CSV completo para todos os modos)
+
+  Cenário 1 | distance_scale=0.75 | noise_scale=0.50 | RMSE_steady=   0.131m | divergência=  0.0%
+  Cenário 1 | distance_scale=0.75 | noise_scale=1.00 | RMSE_steady=   0.245m | divergência=  0.0%
+  Cenário 1 | distance_scale=0.75 | noise_scale=2.00 | RMSE_steady=   0.434m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.00 | noise_scale=0.50 | RMSE_steady=   0.098m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.00 | noise_scale=1.00 | RMSE_steady=   0.192m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.00 | noise_scale=2.00 | RMSE_steady=   0.371m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.50 | noise_scale=0.50 | RMSE_steady=   0.125m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.50 | noise_scale=1.00 | RMSE_steady=   0.246m | divergência=  0.0%
+  Cenário 1 | distance_scale=1.50 | noise_scale=2.00 | RMSE_steady=   0.484m | divergência=  0.0%
+  Cenário 2 | distance_scale=0.75 | noise_scale=0.50 | RMSE_steady=   0.159m | divergência=  0.0%
+  Cenário 2 | distance_scale=0.75 | noise_scale=1.00 | RMSE_steady=   0.305m | divergência=  0.0%
+  Cenário 2 | distance_scale=0.75 | noise_scale=2.00 | RMSE_steady=   0.540m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.00 | noise_scale=0.50 | RMSE_steady=   0.136m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.00 | noise_scale=1.00 | RMSE_steady=   0.255m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.00 | noise_scale=2.00 | RMSE_steady=   0.460m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.50 | noise_scale=0.50 | RMSE_steady=   0.130m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.50 | noise_scale=1.00 | RMSE_steady=   0.257m | divergência=  0.0%
+  Cenário 2 | distance_scale=1.50 | noise_scale=2.00 | RMSE_steady=   0.471m | divergência=  0.0%
+  Cenário 3 | distance_scale=0.75 | noise_scale=0.50 | RMSE_steady=   0.120m | divergência=  0.0%
+  Cenário 3 | distance_scale=0.75 | noise_scale=1.00 | RMSE_steady=   0.212m | divergência=  0.0%
+  Cenário 3 | distance_scale=0.75 | noise_scale=2.00 | RMSE_steady=   0.358m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.00 | noise_scale=0.50 | RMSE_steady=   0.086m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.00 | noise_scale=1.00 | RMSE_steady=   0.162m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.00 | noise_scale=2.00 | RMSE_steady=   0.323m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.50 | noise_scale=0.50 | RMSE_steady=   0.104m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.50 | noise_scale=1.00 | RMSE_steady=   0.205m | divergência=  0.0%
+  Cenário 3 | distance_scale=1.50 | noise_scale=2.00 | RMSE_steady=   0.415m | divergência=  0.0%
+
+==============================================================================
+Arquivos completos: experiment_results/*.csv e geometry_noise_experiment_results/aggregated_by_factor.csv
+Documentação da metodologia: achados_divergencia_fusao.md
+==============================================================================

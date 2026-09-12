@@ -1,0 +1,227 @@
+{
+  "1": {
+    "test": "Friedman",
+    "statistic": 90.0,
+    "p_value": 2.190570119285308e-19,
+    "n_repetitions": 30,
+    "post_hoc": [
+      {
+        "method_a": "fusion",
+        "method_b": "camera_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 0.1899001402949593,
+        "median_b": 0.06494308853145034,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.1899001402949593,
+        "median_b": 265821902.2962858,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.1899001402949593,
+        "median_b": 0.2703022691953041,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.06494308853145034,
+        "median_b": 265821902.2962858,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.06494308853145034,
+        "median_b": 0.2703022691953041,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "rf_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 265821902.2962858,
+        "median_b": 0.2703022691953041,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      }
+    ],
+    "post_hoc_method": "Wilcoxon pareado (mesmas repeti\u00e7\u00f5es/detec\u00e7\u00f5es), corre\u00e7\u00e3o Holm-Bonferroni"
+  },
+  "2": {
+    "test": "Friedman",
+    "statistic": 90.0,
+    "p_value": 2.190570119285308e-19,
+    "n_repetitions": 30,
+    "post_hoc": [
+      {
+        "method_a": "fusion",
+        "method_b": "camera_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 0.2549984758742927,
+        "median_b": 0.1373963757901523,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.2549984758742927,
+        "median_b": 6.866008165149861,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.2549984758742927,
+        "median_b": 0.2980927400844947,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.1373963757901523,
+        "median_b": 6.866008165149861,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.1373963757901523,
+        "median_b": 0.2980927400844947,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "rf_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 6.866008165149861,
+        "median_b": 0.2980927400844947,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      }
+    ],
+    "post_hoc_method": "Wilcoxon pareado (mesmas repeti\u00e7\u00f5es/detec\u00e7\u00f5es), corre\u00e7\u00e3o Holm-Bonferroni"
+  },
+  "3": {
+    "test": "Friedman",
+    "statistic": 90.0,
+    "p_value": 2.190570119285308e-19,
+    "n_repetitions": 30,
+    "post_hoc": [
+      {
+        "method_a": "fusion",
+        "method_b": "camera_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 0.16076402984460392,
+        "median_b": 0.06593789816155024,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.16076402984460392,
+        "median_b": 6.776344285340977,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "fusion",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.16076402984460392,
+        "median_b": 0.26769686015971716,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "rf_only",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.06593789816155024,
+        "median_b": 6.776344285340977,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "camera_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": -1.0,
+        "median_a": 0.06593789816155024,
+        "median_b": 0.26769686015971716,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      },
+      {
+        "method_a": "rf_only",
+        "method_b": "track_to_track_ci",
+        "w_statistic": 0.0,
+        "p_value_raw": 1.862645149230957e-09,
+        "effect_size_rank_biserial": 1.0,
+        "median_a": 6.776344285340977,
+        "median_b": 0.26769686015971716,
+        "p_value_holm_bonferroni": 1.1175870895385742e-08,
+        "significant_after_correction": true
+      }
+    ],
+    "post_hoc_method": "Wilcoxon pareado (mesmas repeti\u00e7\u00f5es/detec\u00e7\u00f5es), corre\u00e7\u00e3o Holm-Bonferroni"
+  }
+}

@@ -1,0 +1,16 @@
+scenario_id,sensor_mode,n_repetitions,n_covariance_stabilized,n_empirically_diverged,divergence_rate_pct,empirical_divergence_rate_pct
+1,baseline_geometric,30,30,0,0.0,0.0
+1,camera_only,30,30,0,0.0,0.0
+1,fusion,30,30,0,0.0,0.0
+1,rf_only,30,0,30,100.0,100.0
+1,track_to_track_ci,30,30,0,0.0,0.0
+2,baseline_geometric,30,30,0,0.0,0.0
+2,camera_only,30,30,0,0.0,0.0
+2,fusion,30,30,0,0.0,0.0
+2,rf_only,30,0,0,100.0,0.0
+2,track_to_track_ci,30,28,0,6.666666666666665,0.0
+3,baseline_geometric,30,30,0,0.0,0.0
+3,camera_only,30,30,0,0.0,0.0
+3,fusion,30,30,0,0.0,0.0
+3,rf_only,30,0,0,100.0,0.0
+3,track_to_track_ci,30,29,0,3.3333333333333326,0.0

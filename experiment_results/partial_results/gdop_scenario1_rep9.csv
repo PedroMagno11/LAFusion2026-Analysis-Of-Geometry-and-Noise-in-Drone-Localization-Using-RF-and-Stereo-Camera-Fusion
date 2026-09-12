@@ -1,0 +1,3 @@
+scenario_id,repetition,sensor_mode,pearson_r,p_value
+1,9,fusion,0.519152785710729,0.022738895838931086
+1,9,track_to_track_ci,0.36162204107210233,0.12818737765789262
